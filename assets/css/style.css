@@ -498,10 +498,10 @@ input:focus, select:focus, textarea:focus { outline: 3px solid var(--sky); outli
 .map-list strong { font-family: var(--font-head); }
 
 /* ---------- v3: прочее ---------- */
-.two-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.4em 0; }
-.two-photos .photo-frame { aspect-ratio: 4/3; }
+.two-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.4em auto; max-width: 560px; }
+.two-photos .photo-frame { aspect-ratio: 4/5; }
 .photo-frame__ph { border: 2px dashed var(--ink-soft); border-radius: 14px; color: var(--ink-soft); font-size: 22px; }
-@media (max-width: 600px) { .two-photos { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .two-photos { gap: 10px; } .two-photos .photo-frame__ph { font-size: 16px; padding: 10px; } }
 .h1-line { display: block; }
 h1 .hl { white-space: nowrap; }
 .stat { font: 800 44px var(--font-head); line-height: 1; }
